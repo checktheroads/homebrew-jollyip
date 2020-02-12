@@ -10,7 +10,7 @@ class JollyIP < Formula
   # TODO: If you're submitting an existing package, make sure you include your
   #       bottle block here.
 
-  depends_on :python3
+  depends_on "python@3.6"
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl#sha256=2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13"
