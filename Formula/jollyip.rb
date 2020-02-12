@@ -1,4 +1,4 @@
-class JollyIP < Formula
+class Jollyip < Formula
   include Language::Python::Virtualenv
 
   desc "Scan an IP range, but happily."
