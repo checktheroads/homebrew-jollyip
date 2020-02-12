@@ -3,8 +3,8 @@ class Jolly IP < Formula
 
   desc "Scan an IP range, but happily."
   homepage "https://github.com/checktheroads/jollyip"
-  url "https://files.pythonhosted.org/packages/ed/e5/90a2f53bc791bd19cef85bcbddb5831a89cdf7a4d6cebd3519a3706d81d6/jollyip-0.0.1.tar.gz"
-  sha256 "6d5aa6f24b0b0bc22df1c2d1046a0fa3ec728d23a61f71190376940949e4be82"
+  url "https://files.pythonhosted.org/packages/b6/97/cfd63e6e20c79313e5ab74794f6d0480b7592a8a2cf0d8cf40a6ac0a7d53/jollyip-0.0.2.tar.gz"
+  sha256 "da982205c6fc8ff14d0adae326b7bd1bc7911c21d411e2abf1c7a17847da4d98"
   head "https://github.com/checktheroads/jollyip.git"
 
   # TODO: If you're submitting an existing package, make sure you include your
@@ -20,11 +20,6 @@ class Jolly IP < Formula
   resource "icmplib" do
     url "https://files.pythonhosted.org/packages/35/c4/87ae023b9fd6d6d6191ccda4ddcd1e4ba7b19afe206d84788ed3892bee9e/icmplib-1.0.2.tar.gz#sha256=5b80a5182e31235bea57847c40f12dd1027625301d6afdb871acf156888b5100"
     sha256 "5b80a5182e31235bea57847c40f12dd1027625301d6afdb871acf156888b5100"
-  end
-
-  resource "ping3" do
-    url "https://files.pythonhosted.org/packages/0c/cb/fa69b09a5536bc083bc5d78066a7e4694cc95432bace033ab3b6b0817133/ping3-2.4.5.tar.gz#sha256=b7557a2846c3a3dd9da6dcd94d73e2b4c1490ef413d3dc16d9bf32d9b4562d23"
-    sha256 "b7557a2846c3a3dd9da6dcd94d73e2b4c1490ef413d3dc16d9bf32d9b4562d23"
   end
 
   resource "colorama" do
