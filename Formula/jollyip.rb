@@ -41,9 +41,9 @@ class Jollyip < Formula
   def install
     puts buildpath
     venv = virtualenv_create(libexec, "python3")
-    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
+    # system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
     # system libexec/"bin/pip", "uninstall", "-y", name
-    venv.pip_install_and_link buildpath
+    venv.system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
   end
 
   test do
