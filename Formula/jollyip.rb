@@ -3,8 +3,8 @@ class Jollyip < Formula
 
   desc "Scan an IP range, but happily."
   homepage "https://github.com/checktheroads/jollyip"
-  url "https://files.pythonhosted.org/packages/b6/97/cfd63e6e20c79313e5ab74794f6d0480b7592a8a2cf0d8cf40a6ac0a7d53/jollyip-0.0.2.tar.gz"
-  sha256 "da982205c6fc8ff14d0adae326b7bd1bc7911c21d411e2abf1c7a17847da4d98"
+  url "https://files.pythonhosted.org/packages/39/00/f5d69f744bafc751e4278a78df4156aa2317ecf0f4a9f3e5d15e6056434a/jollyip-0.0.3.tar.gz"
+  sha256 "2f49c69c3d4f2cfd564ee7fb2764069baeac0c9fb7804b63ecf76bc98102414e"
 
   depends_on "python3"
 
