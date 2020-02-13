@@ -42,7 +42,7 @@ class Jollyip < Formula
     venv = virtualenv_create(libexec, "python3")
     # system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
     # system libexec/"bin/pip", "uninstall", "-y", name
-    venv.pip_install_and_link buildpath
+    # venv.pip_install_and_link buildpath
     venv.formula.system venv.venv_root/"bin/pip", "install", "-v", "--no-deps", "--ignore-installed", buildpath
   end
 
