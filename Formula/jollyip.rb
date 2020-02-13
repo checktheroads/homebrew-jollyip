@@ -39,8 +39,10 @@ class Jollyip < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3")
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
+    system libexec/"bin/pip", "uninstall", "-y", "jollyip"
+    venv.pip_install_and_link buildpath
   end
 
   test do
