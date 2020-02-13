@@ -43,7 +43,10 @@ class Jollyip < Formula
     # system libexec/"bin/pip", "install", "-v", "--ignore-installed", buildpath
     # system libexec/"bin/pip", "uninstall", "-y", name
     # venv.pip_install_and_link buildpath
-    venv.formula.system venv.venv_root/"bin/pip", "install", "-v", "--no-deps", "--ignore-installed", buildpath
+    def venv.custom_install(path)
+      @formula.system @venv_root/"bin/pip", "install", "-v", "--no-deps", "--ignore-installed", path
+    end
+    venv.custom_install buildpath
   end
 
   test do
